@@ -251,7 +251,7 @@ local function RYME_fake_script() -- TextButton.LocalScript
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-	        if script.Parent.Parent.TextBox.Text == "KadenHubOnTop" then
+	        if script.Parent.Parent.TextBox.Text == "KadanHubOnTop2023" then
 	                script.Parent.Parent.Visible = false
 	                script.Parent.Parent.Parent.MistX.Visible = true
 loadstring(game:HttpGet("https://raw.githubusercontent.com/KadenWare/KADEN6407MODMENU/main/KadenHubFrame"))()
