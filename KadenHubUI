@@ -1,1 +1,291 @@
 -- KadanHub loader
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local kadansredkeysystem = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local UICorner = Instance.new("UICorner")
+local AmbientShadow = Instance.new("ImageLabel")
+local PenumbraShadow = Instance.new("ImageLabel")
+local UmbraShadow = Instance.new("ImageLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local AmbientShadow_2 = Instance.new("ImageLabel")
+local PenumbraShadow_2 = Instance.new("ImageLabel")
+local UmbraShadow_2 = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local Folder = Instance.new("Folder")
+local AmbientShadow_3 = Instance.new("ImageLabel")
+local PenumbraShadow_3 = Instance.new("ImageLabel")
+local UmbraShadow_3 = Instance.new("ImageLabel")
+
+--Properties:
+
+kadansredkeysystem.Name = "kadan's red key system"
+kadansredkeysystem.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+kadansredkeysystem.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = kadansredkeysystem
+Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame.BorderColor3 = Color3.fromRGB(205, 7, 7)
+Frame.BorderSizePixel = 3
+Frame.Position = UDim2.new(0.29782331, 0, 0.395151496, 0)
+Frame.Size = UDim2.new(0, 398, 0, 217)
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(32, 33, 36)
+TextBox.Position = UDim2.new(0.249768719, 0, 0.312169313, 0)
+TextBox.Size = UDim2.new(0, 200, 0, 50)
+TextBox.Font = Enum.Font.SourceSansBold
+TextBox.PlaceholderText = "ENTER KEY HERE"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+UICorner.Parent = TextBox
+
+AmbientShadow.Name = "AmbientShadow"
+AmbientShadow.Parent = TextBox
+AmbientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+AmbientShadow.BackgroundTransparency = 1.000
+AmbientShadow.Position = UDim2.new(0.5, 0, 0.5, 3)
+AmbientShadow.Size = UDim2.new(1, 5, 1, 5)
+AmbientShadow.ZIndex = 0
+AmbientShadow.Image = "rbxassetid://1316045217"
+AmbientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+AmbientShadow.ImageTransparency = 0.800
+AmbientShadow.ScaleType = Enum.ScaleType.Slice
+AmbientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+PenumbraShadow.Name = "PenumbraShadow"
+PenumbraShadow.Parent = TextBox
+PenumbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow.BackgroundTransparency = 1.000
+PenumbraShadow.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow.ZIndex = 0
+PenumbraShadow.Image = "rbxassetid://1316045217"
+PenumbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow.ImageTransparency = 0.880
+PenumbraShadow.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UmbraShadow.Name = "UmbraShadow"
+UmbraShadow.Parent = TextBox
+UmbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+UmbraShadow.BackgroundTransparency = 1.000
+UmbraShadow.Position = UDim2.new(0.5, 0, 0.5, 6)
+UmbraShadow.Size = UDim2.new(1, 10, 1, 10)
+UmbraShadow.ZIndex = 0
+UmbraShadow.Image = "rbxassetid://1316045217"
+UmbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+UmbraShadow.ImageTransparency = 0.860
+UmbraShadow.ScaleType = Enum.ScaleType.Slice
+UmbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.Position = UDim2.new(0.367689729, 0, 0.663423717, 0)
+TextButton.Size = UDim2.new(0, 106, 0, 28)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Verify"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+UICorner_2.Parent = TextButton
+
+AmbientShadow_2.Name = "AmbientShadow"
+AmbientShadow_2.Parent = TextButton
+AmbientShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+AmbientShadow_2.BackgroundColor3 = Color3.fromRGB(63, 181, 240)
+AmbientShadow_2.BackgroundTransparency = 1.000
+AmbientShadow_2.Position = UDim2.new(0.5, 0, 0.5, 3)
+AmbientShadow_2.Size = UDim2.new(1, 5, 1, 5)
+AmbientShadow_2.ZIndex = 0
+AmbientShadow_2.Image = "rbxassetid://1316045217"
+AmbientShadow_2.ImageColor3 = Color3.fromRGB(255, 0, 0)
+AmbientShadow_2.ImageTransparency = 0.800
+AmbientShadow_2.ScaleType = Enum.ScaleType.Slice
+AmbientShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+PenumbraShadow_2.Name = "PenumbraShadow"
+PenumbraShadow_2.Parent = TextButton
+PenumbraShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow_2.BackgroundColor3 = Color3.fromRGB(63, 181, 240)
+PenumbraShadow_2.BackgroundTransparency = 1.000
+PenumbraShadow_2.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow_2.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow_2.ZIndex = 0
+PenumbraShadow_2.Image = "rbxassetid://1316045217"
+PenumbraShadow_2.ImageColor3 = Color3.fromRGB(255, 0, 0)
+PenumbraShadow_2.ImageTransparency = 0.880
+PenumbraShadow_2.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UmbraShadow_2.Name = "UmbraShadow"
+UmbraShadow_2.Parent = TextButton
+UmbraShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+UmbraShadow_2.BackgroundColor3 = Color3.fromRGB(63, 181, 240)
+UmbraShadow_2.BackgroundTransparency = 1.000
+UmbraShadow_2.Position = UDim2.new(0.5, 0, 0.5, 6)
+UmbraShadow_2.Size = UDim2.new(1, 10, 1, 10)
+UmbraShadow_2.ZIndex = 0
+UmbraShadow_2.Image = "rbxassetid://1316045217"
+UmbraShadow_2.ImageColor3 = Color3.fromRGB(255, 0, 0)
+UmbraShadow_2.ImageTransparency = 0.860
+UmbraShadow_2.ScaleType = Enum.ScaleType.Slice
+UmbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.248743713, 0, 0.179723501, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 20)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Kadan#6407's Key System"
+TextLabel.TextColor3 = Color3.fromRGB(108, 108, 108)
+TextLabel.TextSize = 14.000
+
+Folder.Parent = Frame
+
+AmbientShadow_3.Name = "AmbientShadow"
+AmbientShadow_3.Parent = Folder
+AmbientShadow_3.AnchorPoint = Vector2.new(0.5, 0.5)
+AmbientShadow_3.BackgroundColor3 = Color3.fromRGB(63, 181, 240)
+AmbientShadow_3.BackgroundTransparency = 1.000
+AmbientShadow_3.Position = UDim2.new(0.507537723, 0, 0.47235024, 3)
+AmbientShadow_3.Size = UDim2.new(1.0351758, 5, 1.05529952, 5)
+AmbientShadow_3.ZIndex = 0
+AmbientShadow_3.Image = "rbxassetid://1316045217"
+AmbientShadow_3.ImageColor3 = Color3.fromRGB(255, 0, 0)
+AmbientShadow_3.ImageTransparency = 0.800
+AmbientShadow_3.ScaleType = Enum.ScaleType.Slice
+AmbientShadow_3.SliceCenter = Rect.new(10, 10, 118, 118)
+AmbientShadow_3.SliceScale = 2.000
+
+PenumbraShadow_3.Name = "PenumbraShadow"
+PenumbraShadow_3.Parent = Folder
+PenumbraShadow_3.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow_3.BackgroundColor3 = Color3.fromRGB(63, 181, 240)
+PenumbraShadow_3.BackgroundTransparency = 1.000
+PenumbraShadow_3.Position = UDim2.new(0.49120602, 0, 0.5, 1)
+PenumbraShadow_3.Size = UDim2.new(1.00753772, 18, 1, 18)
+PenumbraShadow_3.ZIndex = 0
+PenumbraShadow_3.Image = "rbxassetid://1316045217"
+PenumbraShadow_3.ImageColor3 = Color3.fromRGB(255, 0, 0)
+PenumbraShadow_3.ImageTransparency = 0.880
+PenumbraShadow_3.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow_3.SliceCenter = Rect.new(10, 10, 118, 118)
+PenumbraShadow_3.SliceScale = 2.000
+
+UmbraShadow_3.Name = "UmbraShadow"
+UmbraShadow_3.Parent = Folder
+UmbraShadow_3.AnchorPoint = Vector2.new(0.5, 0.5)
+UmbraShadow_3.BackgroundColor3 = Color3.fromRGB(63, 181, 240)
+UmbraShadow_3.BackgroundTransparency = 1.000
+UmbraShadow_3.Position = UDim2.new(0.5, 0, 0.467741936, 6)
+UmbraShadow_3.Size = UDim2.new(1, 10, 1.06451619, 10)
+UmbraShadow_3.ZIndex = 0
+UmbraShadow_3.Image = "rbxassetid://1316045217"
+UmbraShadow_3.ImageColor3 = Color3.fromRGB(255, 0, 0)
+UmbraShadow_3.ImageTransparency = 0.860
+UmbraShadow_3.ScaleType = Enum.ScaleType.Slice
+UmbraShadow_3.SliceCenter = Rect.new(10, 10, 118, 118)
+UmbraShadow_3.SliceScale = 2.000
+
+-- Scripts:
+
+local function CJOOXA_fake_script() -- Frame.Dragify 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService("UserInputService")
+	local dragSpeed = -math.huge
+	
+	local dragToggle = nil
+	local dragInput = nil
+	local dragStart = nil
+	local dragPos = nil
+	
+	function dragify(Frame)
+		function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        script.Parent.Position = Position
+		end
+		
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+		end)
+		
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+		end)
+		
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(CJOOXA_fake_script)()
+local function RYME_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	        if script.Parent.Parent.TextBox.Text == "Panda#2890" then
+	                script.Parent.Parent.Visible = false
+	                script.Parent.Parent.Parent.MistX.Visible = true
+	        else
+	                game.StarterGui:SetCore("SendNotification", {
+	                        Title = "Key System";
+	                        Text = "Incorrect Key, Please try again";
+	                        Icon = "";
+	                })
+	        end
+	end)
+end
+coroutine.wrap(RYME_fake_script)()
+local function WMOZ_fake_script() -- TextLabel.TypewriterEffect 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local text = "Kadan#6407's Key System" -- Change to your text.
+	local wantFadeOut = true -- Set to false if you don't want the text to fade out after it has finished.
+	
+	for i = 1, #text do
+		script.Parent.Text  = string.sub(text, 1, i)
+		wait(0.1)
+	end
+	
+	
+	if wantFadeOut == true then
+		
+	repeat 
+			
+		script.Parent.TextTransparency += 0.05
+		script.Parent.BackgroundTransparency += 0.05
+			wait(0.1)
+	
+		until script.Parent.TextTransparency == 1
+	
+	end
+end
+coroutine.wrap(WMOZ_fake_script)()
