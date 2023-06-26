@@ -1,1 +1,159 @@
+if game.PlaceId == 8170900938 then
 
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "KadenHub: R2F", HidePremium = false, SaveConfig = true, ConfigFolder = "KadenHub R2F", IntroEnabled = true, IntroText = "KadanHub R2F MOD MENU | made by Kadan#6407", IntroIcon = "rbxassetid://7733765398"})
+
+    -- Loading Notification
+    OrionLib:MakeNotification({
+        Name = "KadenHub: R2F | Notification: 1",
+        Content = "Menu is Loading...",
+        Image = "rbxassetid://7733765398",
+        Time = 3.5
+    })
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://1544025432" -- 4612384434 // 
+    sound.Looped = false
+    sound.Parent = workspace
+    sound.Volume = 2
+    sound.PlaybackSpeed = 1
+    sound:Play()
+wait(3.5)
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://4612384434" -- 4612384434 // 
+    sound.Looped = false
+    sound.Parent = workspace
+    sound.Volume = 2
+    sound.PlaybackSpeed = 1
+    sound:Play()
+    
+    local CreditsTab = Window:MakeTab({
+        Name = "Credits",
+        Icon = "rbxassetid://7733673987",
+        PremiumOnly = false
+    })
+-- credits Tab Script
+local CreditsTabSection = CreditsTab:AddSection({
+	Name = "Credits"
+})
+
+    CreditsTab:AddLabel("CREDITS")
+    CreditsTab:AddLabel("Roblox: Killshot_storm")
+    CreditsTab:AddLabel("Discord: Kadan#6407")
+    CreditsTab:AddLabel("Youtube: killshot_storm")
+-- Credits Tab Script End
+    local MorphsTab = Window:MakeTab({
+        Name = "Morphs / Voices",
+        Icon = "rbxassetid://7733770755",
+        PremiumOnly = false
+    })
+-- Morph Tab Script
+
+-- Morph Tab Script End
+
+    local Miscellaneous = Window:MakeTab({
+        Name = "Miscellaneous",
+        Icon = "rbxassetid://7733798747",
+        PremiumOnly = false
+    })
+
+--Miscellaneous Tab Script
+
+-- Miscellaneous Tab Script End
+
+    local MusicTab = Window:MakeTab({
+        Name = "Music",
+        Icon = "rbxassetid://7734020554",
+        PremiumOnly = false
+    })
+-- music tab Script 
+ --Electric Synth Chaos
+ MusicTab:AddButton({
+	Name = "Electric Synth Chaos!",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+-- Music Tab Script End
+
+
+    local PlayerConfigurationsTab = Window:MakeTab({
+        Name = "Configs",
+        Icon = "rbxassetid://7743878358",
+        PremiumOnly = false
+    })
+    local MyCustomStylesTab = Window:MakeTab({
+        Name = "My Custom Styles",
+        Icon = "rbxassetid://7733793319",
+        PremiumOnly = false
+    })
+    -- Custom Styles Tab Script
+    Tab:AddButton({
+        Name = "Button!",
+        Callback = function()
+                  print("button pressed")
+          end    
+    })
+    -- Custom Styles Tab Script End
+    local UnknownCreatorStylesTab = Window:MakeTab({
+        Name = "Style Mods by other creators",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    local GameBasedStyles = Window:MakeTab({
+        Name = "Game Styles",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+    GameBasedStyles:AddButton({
+        Name = "Dragon Style - kadan#6407",
+        Callback = function()
+           
+                game.ReplicatedStorage.Sounds.WallBound.Value = "rbxassetid://3923230963"
+                game.ReplicatedStorage.Sounds.Fear.Value = "rbxassetid://1448354302"
+                game.ReplicatedStorage.Styles.Brawler.VisualName.Value = "Dragon"
+                game.ReplicatedStorage.Moves.TigerDrop.Anim.AnimationId = "rbxassetid://12120052426"
+                game.ReplicatedStorage.Styles.Brawler.Idle.AnimationId = "rbxassetid://12120045620"
+                game.ReplicatedStorage.Styles.Brawler.Color.Value = Color3.fromRGB(255,0,0)
+                game.ReplicatedStorage.Styles.Brawler.StanceStrike.Value = "龍TigerDrop"
+                game.ReplicatedStorage.Styles.Brawler.H_TwoHandeds.Value = "H_SelfDestruct"
+                game.ReplicatedStorage.Styles.Brawler.H_FallenDown.Value = "H_FallenBeatdown"
+                game.ReplicatedStorage.Styles.Brawler.H_Fallen.Value = "H_FallenKick"
+                game.ReplicatedStorage.Styles.Brawler.H_GrabStanding2.Value = "H_Swing"
+                game.ReplicatedStorage.Styles.Brawler.HThrow.Value = "T_龍GParry"
+                game.ReplicatedStorage.Styles.Brawler.Throw.Value = "T_FinishingHold2"
+                game.ReplicatedStorage.Styles.Brawler.ComboSpeed.Value = 1.5
+                game.ReplicatedStorage.Styles.Brawler.Speed.Value = 1.5
+                game.ReplicatedStorage.OverworldSpeed.Value = 1.5
+                game.ReplicatedStorage.Speed.Value = 20
+                game.ReplicatedStorage.Styles.Brawler.NoBonus.Value = "龍Stomp"
+                game.ReplicatedStorage.Styles.Brawler.Fallen.Value = "龍Stomp"
+                game.ReplicatedStorage.Styles.Brawler.Strike1.Value = "龍Strike1"
+                game.ReplicatedStorage.Styles.Brawler.Strike2.Value = "龍Strike2"
+                game.ReplicatedStorage.Styles.Brawler.Strike3.Value = "龍Strike3"
+                game.ReplicatedStorage.Styles.Brawler.Strike4.Value = "龍Strike4"
+                game.ReplicatedStorage.Styles.Brawler.Rush1.Value = "龍Attack1"
+                game.ReplicatedStorage.Styles.Brawler.Rush2.Value = "龍Attack2"
+                game.ReplicatedStorage.Styles.Brawler.Rush3.Value = "龍Attack3"
+                game.ReplicatedStorage.Styles.Brawler.Rush4.Value = "龍Attack4"
+                game.ReplicatedStorage.Styles.Brawler.Rush5.Value = "RPunch4"
+                
+                if game.ReplicatedStorage.Styles.Brawler:FindFirstChild("RedHeat") then
+                v = game.ReplicatedStorage.Styles.Brawler["RedHeat"]
+                else
+                v = Instance.new("Folder", game.ReplicatedStorage.Styles.Brawler)
+                end
+                v.Name = "RedHeat"
+                
+                  print("Dragon Style Loaded")
+          end    
+    })
+    GameBasedStyles:AddButton({
+        Name = "Shucky Style - Kadan#6407",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/KadenWare/KADEN6407MODMENU/main/Shucky%20Style%20V0.1"))()
+          end    
+    })
+    end
