@@ -153,7 +153,7 @@ local CreditsTabSection = CreditsTab:AddSection({
     GameBasedStyles:AddButton({
         Name = "Shucky Style - Kadan#6407",
         Callback = function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/KadenWare/KADEN6407MODMENU/main/Shucky%20Style%20V0.1"))()
+            loadstring(game:HttpGet("https://github.com/KadenWare/KADEN6407MODMENU/blob/main/Shucky%20Style%20V0.1"))()
           end    
     })
     end
