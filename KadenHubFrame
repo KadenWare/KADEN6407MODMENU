@@ -32,9 +32,6 @@ wait(3.5)
         PremiumOnly = false
     })
 -- credits Tab Script
-local CreditsTabSection = CreditsTab:AddSection({
-	Name = "Credits"
-})
 
     CreditsTab:AddLabel("CREDITS")
     CreditsTab:AddLabel("Roblox: Killshot_storm")
@@ -88,12 +85,7 @@ local CreditsTabSection = CreditsTab:AddSection({
         PremiumOnly = false
     })
     -- Custom Styles Tab Script
-    Tab:AddButton({
-        Name = "Button!",
-        Callback = function()
-                  print("button pressed")
-          end    
-    })
+
     -- Custom Styles Tab Script End
     local UnknownCreatorStylesTab = Window:MakeTab({
         Name = "Style Mods by other creators",
@@ -108,7 +100,7 @@ local CreditsTabSection = CreditsTab:AddSection({
     })
 
     GameBasedStyles:AddButton({
-        Name = "Dragon Style - kadan#6407",
+        Name = "Dragon Style",
         Callback = function()
            
                 game.ReplicatedStorage.Sounds.WallBound.Value = "rbxassetid://3923230963"
@@ -150,10 +142,5 @@ local CreditsTabSection = CreditsTab:AddSection({
                   print("Dragon Style Loaded")
           end    
     })
-    GameBasedStyles:AddButton({
-        Name = "Shucky Style - Kadan#6407",
-        Callback = function()
-            loadstring(game:HttpGet("https://github.com/KadenWare/KADEN6407MODMENU/blob/main/Shucky%20Style%20V0.1"))()
-          end    
-    })
+    
     end
